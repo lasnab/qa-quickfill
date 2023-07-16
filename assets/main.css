@@ -1,0 +1,94 @@
+strong.heading {
+  color: var(--contrast);
+}
+
+div.table-container {
+  max-height: 300px;
+  overflow-y: scroll;
+  border-radius: 4px;
+  border: 1px solid var(--primary);
+  margin: 12px 0px 12px 0px;
+}
+
+div > table > thead {
+  background-color: var(--contrast);
+  position: sticky;
+  top: 0;
+}
+
+tr.highlight {
+  background-color: var(--primary-hover);
+  cursor: pointer;
+}
+
+tr.highlight > td {
+  color: var(--primary-inverse);
+}
+
+tr.highlight > td > span {
+  color: var(--contrast-inverse);
+}
+
+.table > thead > tr > th {
+  color: var(--contrast-inverse);
+}
+
+table {
+  border-collapse: collapse;
+  position: relative;
+  width: 100%;
+}
+
+span.env {
+  display: inline-block;
+  width: 75px;
+  text-align: center;
+  color: var(--contrast);
+  font-size: 12px;
+  border: 1px solid;
+  border-radius: 2px;
+  padding: 4px;
+}
+
+.hide-text-overflow {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.hide {
+  display: none;
+}
+
+.empty-list-disclaimer {
+  text-align: center;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.contrast {
+  color: var(--contrast);
+}
+
+.custom-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 12px;
+}
+
+.custom-header > span.h-text {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+
+.custom-header > span.h-subtitle {
+  font-size: 16px;
+  color: var(--secondary);
+}
+
+.required {
+  color: red;
+}

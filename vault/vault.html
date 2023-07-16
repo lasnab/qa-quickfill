@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Settings</title>
+    <link rel="stylesheet" href="../assets/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../assets/favicon/site.webmanifest" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="headings">
+        <h1>QA QuickFill</h1>
+        <small>Making testing easier - Add, Manage & Autofill.</small>
+      </div>
+      <div id="addParamsSection">
+        <form id="paramsForm">
+          <h4>Add Params</h4>
+          <div class="grid">
+            <label for="envInput"
+              >Environment
+              <sup class="required">*</sup>
+              <select id="envInput" name="env" required>
+                <option value="prod">PROD</option>
+                <option value="qa1" selected>QA1</option>
+                <option value="qa2">QA2</option>
+                <option value="stage1">STAGE1</option>
+                <option value="stage2">STAGE2</option>
+              </select>
+            </label>
+            <label for="typeInput"
+              >Type
+              <input type="text" id="typeInput" />
+            </label>
+            <label for="createdAtInput"
+              >Created On <input type="date" id="createdAtInput"
+            /></label>
+          </div>
+          <label for="loginIdInput"
+            >Login ID <sup class="required">*</sup
+            ><input type="text" id="loginIdInput" required
+          /></label>
+          <label for="loginParamInput"
+            >Login Param <sup class="required">*</sup
+            ><input type="text" id="loginParamInput" required
+          /></label>
+          <div class="grid">
+            <button id="clearFieldsBtn" class="outline">Clear</button>
+            <button id="saveFieldsBtn">Save</button>
+          </div>
+        </form>
+      </div>
+      <div id="allParamsSection">
+        <div class="table-container">
+          <table id="paramsTable" class="table">
+            <thead>
+              <tr>
+                <th>ENV</th>
+                <th>TYPE</th>
+                <th>LOGIN</th>
+                <th>PARAM</th>
+                <th>CREATED</th>
+              </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+          </table>
+        </div>
+        <div id="emptyListDisclaimer" class="empty-list-disclaimer">
+          Your Testing Params Will Appear Here.
+          <span class="contrast">Add&nbsp;Params</span> To Get Started!
+        </div>
+      </div>
+      <div id="disclaimerSection" class="headings">
+        <h2>Disclaimer</h2>
+        <small>
+          This extension is designed to store generic login information for test
+          accounts and is not intended to be a password manager. While efforts
+          have been made to ensure the security of stored data, there are no
+          guarantees of complete security. It functions more like a diary,
+          allowing you to write down and autofill certain fields in a form for
+          testing purposes, as well as keeping track of relevant information.
+          Please use this extension responsibly and avoid storing sensitive or
+          personal login credentials.</small
+        >
+      </div>
+      <script src="../assets/common.js"></script>
+      <script src="vault.js"></script>
+    </div>
+  </body>
+</html>

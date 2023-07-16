@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="../assets/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../assets/favicon/site.webmanifest" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <header>
+        <div class="custom-header">
+          <span class="h-text">QA QuickFill</span>
+          <span class="h-subtitle">Manage Test Parameters Hassle-Free!</span>
+        </div>
+      </header>
+      <div class="table-container">
+        <table id="paramsTable" class="table">
+          <thead>
+            <tr>
+              <th>ENV</th>
+              <th>TYPE</th>
+              <th>LOGIN</th>
+              <th>PARAM</th>
+              <th>CREATED</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+      </div>
+      <div id="emptyListDisclaimer" class="empty-list-disclaimer">
+        Your Testing Params Will Appear Here. Click
+        <span class="contrast">Add&nbsp;Params</span> At The Top To Get Started!
+      </div>
+      <button id="addParamsBtn">Add Params</button>
+      <button id="settingsBtn" class="outline">Settings</button>
+      <footer>
+        <small>
+          <a href="https://github.com/lasnab">Created by Hrithik</a>
+          <a href="#" class="contrast" id="disclaimerBtn">Disclaimer</a>
+        </small>
+      </footer>
+      <script src="../assets/common.js"></script>
+      <script src="popup.js"></script>
+    </div>
+  </body>
+</html>
