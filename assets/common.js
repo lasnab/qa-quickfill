@@ -55,7 +55,7 @@ function saveFields() {
     type: document.getElementById('typeInput').value,
     id: document.getElementById('loginIdInput').value,
     param: document.getElementById('loginParamInput').value,
-    created: new Date(document.getElementById('createdAtInput').value),
+    created: document.getElementById('createdAtInput').value,
   };
 
   if (!currParam.env || !currParam.id || !currParam.param) {
