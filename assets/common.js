@@ -18,7 +18,7 @@ function createTableRows() {
       const tr = document.createElement('tr');
 
       tr.addEventListener('click', function () {
-        autofillCredentials(param.id, param.param);
+        autoFillParams(param.id, param.param);
       });
 
       tr.addEventListener('mouseover', function () {

@@ -1,15 +1,12 @@
-function autofillCredentials(loginId, loginParam) {
+function autoFillParams(loginId, loginParam) {
   chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
-    chrome.tabs.sendMessage(
-      tabs[0].id,
-      {
-        loginId,
-        loginParam,
-      },
-      function (response) {
-        console.log(response.status);
-      }
-    );
+    const tab = tabs[0];
+    chrome.runtime.sendMessage({
+      action: 'autoFillParams',
+      loginId: loginId,
+      loginParam: loginParam,
+      tabId: tab.id,
+    });
   });
 }
 

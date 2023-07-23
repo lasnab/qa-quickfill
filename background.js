@@ -20,3 +20,24 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     });
   }
 });
+
+chrome.runtime.onMessage.addListener(function (message) {
+  if (message.action === 'autoFillParams') {
+    console.log('autofilll clicked');
+    chrome.scripting.executeScript({
+      target: { tabId: message.tabId },
+      func: injectedFunction,
+      args: [message.loginId, message.loginParam],
+    });
+  }
+});
+
+function injectedFunction(loginId, loginParam) {
+  const usernameField = document.getElementById('usernameOrEmail');
+  const passwordField = document.getElementById('password');
+
+  if (usernameField && passwordField) {
+    usernameField.value = loginId;
+    passwordField.value = loginParam;
+  }
+}
