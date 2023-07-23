@@ -71,7 +71,6 @@ function saveFields() {
     }
 
     chrome.storage.sync.set({ globalParams }, function () {
-      console.log('Saved');
       clearFields();
       createTableRows();
     });

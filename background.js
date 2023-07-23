@@ -23,7 +23,6 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
 
 chrome.runtime.onMessage.addListener(function (message) {
   if (message.action === 'autoFillParams') {
-    console.log('autofilll clicked');
     chrome.scripting.executeScript({
       target: { tabId: message.tabId },
       func: injectedFunction,
