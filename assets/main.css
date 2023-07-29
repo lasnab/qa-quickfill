@@ -92,3 +92,7 @@ span.env {
 .required {
   color: red;
 }
+
+.delete-icon {
+  color: red;
+}
