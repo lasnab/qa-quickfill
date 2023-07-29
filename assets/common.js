@@ -1,6 +1,9 @@
 function createTableRows() {
   const tableBody = document.getElementById('tableBody');
   const emptyListDisclaimer = document.getElementById('emptyListDisclaimer');
+  const populatedListInstructions = document.getElementById(
+    'populatedListInstructions'
+  );
 
   chrome.storage.sync.get({ globalParams: [] }, function (result) {
     const tableRows = result.globalParams ?? [];
@@ -8,10 +11,12 @@ function createTableRows() {
     if (tableRows.length === 0) {
       tableBody.innerHTML = '';
       emptyListDisclaimer.classList.remove('hide');
+      populatedListInstructions.classList.add('hide');
       return;
     }
 
     emptyListDisclaimer.classList.add('hide');
+    populatedListInstructions.classList.remove('hide');
 
     tableBody.innerHTML = '';
 

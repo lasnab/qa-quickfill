@@ -66,6 +66,11 @@ span.env {
   text-transform: capitalize;
 }
 
+.populated-list-instructions {
+  text-align: left;
+  font-size: 14px;
+}
+
 .contrast {
   color: var(--contrast);
 }
