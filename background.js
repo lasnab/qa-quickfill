@@ -32,11 +32,42 @@ chrome.runtime.onMessage.addListener(function (message) {
 });
 
 function injectedFunction(loginId, loginParam) {
-  const usernameField = document.getElementById('usernameOrEmail');
-  const passwordField = document.getElementById('password');
+  const setFormFields = (formFields) => {
+    const inputTypes = [window.HTMLInputElement];
 
-  if (usernameField && passwordField) {
-    usernameField.value = loginId;
-    passwordField.value = loginParam;
-  }
+    const triggerInputChange = (selector, value) => {
+      const node = document.querySelector(selector);
+      if (inputTypes.indexOf(node.__proto__.constructor) > -1) {
+        const setValue = Object.getOwnPropertyDescriptor(
+          node.__proto__,
+          'value'
+        ).set;
+        let event = new Event('input', {
+          bubbles: true,
+        });
+
+        if (node.__proto__.constructor === window.HTMLSelectElement) {
+          event = new Event('change', {
+            bubbles: true,
+          });
+        } else if (node.type === 'checkbox') {
+          node.checked = value;
+          event = new Event('change', {
+            bubbles: true,
+          });
+        }
+        setValue.call(node, value);
+        node.dispatchEvent(event);
+      }
+    };
+
+    Object.entries(formFields).forEach(([selector, value]) =>
+      triggerInputChange(selector, value)
+    );
+  };
+
+  setFormFields({
+    'input[name="usernameOrEmail"]': loginId,
+    'input[name="password"]': loginParam,
+  });
 }
