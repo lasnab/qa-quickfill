@@ -51,18 +51,4 @@ QA QuickFill is a Chrome extension designed to streamline manual testing by prov
    - Click on the extension icon to open the popup.
    - Select the desired account and click "Autofill" to populate login credentials.
 
-## Contributing
-
-Feel free to contribute to the development of QA QuickFill. Fork the repository, make your changes, and submit a pull request.
-
-## Issues
-
-If you encounter any issues or have suggestions for improvement, please create an issue on the GitHub repository.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
----
-
 _Happy Testing!_
