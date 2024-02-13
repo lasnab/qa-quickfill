@@ -1,8 +1,7 @@
 # QA QuickFill - Rapidify Manual Testing
 
-Check out the extension here 👇🏾
-[![QA Quick Fill](https://img.shields.io/chrome-web-store/v/YOUR_EXTENSION_ID.svg)](https://chromewebstore.google.com/detail/qa-quickfill/loaffnojpnmaceobeiibbffmdopejbpl)
-
+Check out the extension here 👉
+![QA Quick Fill](https://chromewebstore.google.com/detail/qa-quickfill/loaffnojpnmaceobeiibbffmdopejbpl)
 
 ## Description
 
@@ -38,10 +37,12 @@ QA QuickFill is a Chrome extension designed to streamline manual testing by prov
 1. Open the extension popup by clicking on the extension icon in the Chrome toolbar.
 
 2. **Adding Accounts:**
+
    - Fill in the required fields (Environment, Type, Username, Password, Created On) in the "Add Account" section.
    - Click "Save" to store the account details.
 
 3. **Managing Accounts:**
+
    - View and edit stored accounts in the extension popup.
    - Organize accounts based on environment types and custom categories.
 
@@ -63,4 +64,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-*Happy Testing!*
+_Happy Testing!_
