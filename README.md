@@ -1,7 +1,8 @@
 # QA QuickFill - Rapidify Manual Testing
 
 Check out the extension here 👇🏾
-[![QA Quick Fill](https://img.shields.io/chrome-web-store/v/YOUR_EXTENSION_ID.svg)](https://chrome.google.com/webstore/detail/loaffnojpnmaceobeiibbffmdopejbpl)
+[![QA Quick Fill](https://img.shields.io/chrome-web-store/v/YOUR_EXTENSION_ID.svg)](https://chromewebstore.google.com/detail/qa-quickfill/loaffnojpnmaceobeiibbffmdopejbpl)
+
 
 ## Description
 
