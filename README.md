@@ -1,7 +1,6 @@
 # QA QuickFill - Rapidify Manual Testing
 
-Check out the extension here 👉
-![QA Quick Fill](https://chromewebstore.google.com/detail/qa-quickfill/loaffnojpnmaceobeiibbffmdopejbpl)
+Check out the extension here 👉 [QA Quick Fill](https://chromewebstore.google.com/detail/qa-quickfill/loaffnojpnmaceobeiibbffmdopejbpl)
 
 ## Description
 
