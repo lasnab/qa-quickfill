@@ -2,6 +2,8 @@
 
 Check out the extension here 👉 [QA Quick Fill](https://chromewebstore.google.com/detail/qa-quickfill/loaffnojpnmaceobeiibbffmdopejbpl)
 
+![preview](./preview.png)
+
 ## Description
 
 QA QuickFill is a Chrome extension designed to streamline manual testing by providing a convenient solution to add, manage, and autofill QA parameters. The extension acts as a virtual diary, enabling users to effortlessly access test accounts based on their QA environment types, such as PROD, STAGE, and more.
